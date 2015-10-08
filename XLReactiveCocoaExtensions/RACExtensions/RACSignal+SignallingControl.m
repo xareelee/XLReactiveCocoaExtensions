@@ -20,7 +20,9 @@
 
 - (RACSignal *)alsoWhen:(RACSignal *)kickerSignal;
 {
-  return [self sample:[RACSignal merge:@[self, kickerSignal]]];
+  return [RACSignal combineLatest:@[self, kickerSignal] reduce:^id(id first, id second){
+    return first;
+  }];
 }
 
 #pragma mark Channel
