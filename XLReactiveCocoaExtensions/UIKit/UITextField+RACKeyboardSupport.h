@@ -30,7 +30,7 @@
 /// @param doneBlock Tapping the return key of the Last text field in this array
 /// will invoke the `doneBlock`. If the doneBlock is nil, tapping the return key
 /// will not cause the keybaord to be dismissed automatically.
-- (RACDisposable *)racExt_chainUpTextFieldAndSubscribeCompletion:(void (^)(id x))doneBlock;
+- (RACDisposable *)racExt_chainUpTextFieldsAndSubscribeNextForLastField:(void (^)(id x))doneBlock;
 
 - (RACDisposable *)racExt_textFieldNextChainUp:(void (^)(id x))doneBlock __attribute__((deprecated("Use -racExt_chainUpTextFieldAndSubscribeCompletion:")));
 @end

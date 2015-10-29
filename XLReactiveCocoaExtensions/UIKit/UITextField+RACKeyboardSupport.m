@@ -32,7 +32,7 @@
 
 @implementation NSArray (RACEXTKeyboardSupport)
 
-- (RACDisposable *)racExt_chainUpTextFieldAndSubscribeCompletion:(void (^)(id x))doneBlock;
+- (RACDisposable *)racExt_chainUpTextFieldsAndSubscribeNextForLastField:(void (^)(id x))doneBlock;
 {
   RACCompoundDisposable *compoundDisposable = [RACCompoundDisposable compoundDisposable];
   __block UITextField *lastChainedTextField = nil;
