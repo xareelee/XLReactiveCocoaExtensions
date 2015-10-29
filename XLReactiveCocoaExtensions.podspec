@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'XLReactiveCocoaExtensions'
-  s.version      = '2.0.2'
+  s.version      = '2.0.3'
   s.license      = 'MIT'
   s.summary      = 'The missing part of ReactiveCocoa for development'
   s.homepage     = 'https://github.com/xareelee/XLReactiveCocoaExtensions'
