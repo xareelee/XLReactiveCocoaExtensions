@@ -63,7 +63,7 @@
 // Deprecated
 - (RACDisposable *)racExt_textFieldNextChainUp:(void (^)(id x))doneBlock
 {
-  return [self racExt_chainUpTextFieldAndSubscribeCompletion:doneBlock];
+  return [self racExt_chainUpTextFieldsAndSubscribeNextForLastField:doneBlock];
 }
 
 @end

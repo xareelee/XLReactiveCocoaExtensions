@@ -32,5 +32,5 @@
 /// will not cause the keybaord to be dismissed automatically.
 - (RACDisposable *)racExt_chainUpTextFieldsAndSubscribeNextForLastField:(void (^)(id x))doneBlock;
 
-- (RACDisposable *)racExt_textFieldNextChainUp:(void (^)(id x))doneBlock __attribute__((deprecated("Use -racExt_chainUpTextFieldAndSubscribeCompletion:")));
+- (RACDisposable *)racExt_textFieldNextChainUp:(void (^)(id x))doneBlock __attribute__((deprecated("Use -racExt_chainUpTextFieldsAndSubscribeNextForLastField:")));
 @end
