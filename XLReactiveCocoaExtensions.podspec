@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'XLReactiveCocoaExtensions'
-  s.version      = '2.0.1'
+  s.version      = '2.0.2'
   s.license      = 'MIT'
   s.summary      = 'The missing part of ReactiveCocoa for development'
   s.homepage     = 'https://github.com/xareelee/XLReactiveCocoaExtensions'
@@ -16,13 +16,13 @@ Pod::Spec.new do |s|
     # ss.public_header_files = 'XLReactiveCocoaExtensions/*.h'
     ss.source_files = 'XLReactiveCocoaExtensions/*.h', 'XLReactiveCocoaExtensions/RACExtensions/*.{h,m}', 'XLReactiveCocoaExtensions/Foundation/*.{h,m}'
     ss.frameworks = 'Foundation'
-    ss.dependency 'ReactiveCocoa', '~> 2.5'
+    ss.dependency 'ReactiveCocoa', '< 3.0'
   end
 
   s.subspec 'UIKit' do |ss|
     ss.source_files = 'XLReactiveCocoaExtensions/UIKit/*.{h,m}'
     ss.frameworks = 'UIKit'
-    ss.dependency 'ReactiveCocoa', '~> 2.5'
+    ss.dependency 'ReactiveCocoa', '< 3.0'
   end
 
 end
