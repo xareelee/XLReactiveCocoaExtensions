@@ -17,12 +17,17 @@
   return
   [[[self
     map:^id(id value) {
+      if (!value)
+        return @NO;
       if ([value respondsToSelector:@selector(length)])
         return @([value length] > 0);
       if ([value respondsToSelector:@selector(integerValue)])
         return @([value integerValue] != 0);
       if ([value respondsToSelector:@selector(hasValue)])
         return @([value hasValue]);
+      if ([value isEqual:[NSNull null]]) {
+        return @NO;
+      }
       
       NSCAssert(NO, @"This value type (%@) cound not be evaluated by -[RACSignal hasValue].", NSStringFromClass([value class]));
       return @NO;
