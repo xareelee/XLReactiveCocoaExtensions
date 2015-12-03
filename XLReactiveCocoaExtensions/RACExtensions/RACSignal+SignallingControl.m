@@ -20,7 +20,11 @@
 
 - (RACSignal *)alsoWhen:(RACSignal *)kickerSignal;
 {
-  return [self sample:[RACSignal merge:@[self, kickerSignal]]];
+  // Start with a nil value
+  RACSignal *autoStartedKickerSignal = [kickerSignal startWith:nil];
+  return [[self combineLatestWith:autoStartedKickerSignal] reduceEach:^id (id value, id kicker){
+    return value;
+  }];
 }
 
 #pragma mark Channel
