@@ -7,7 +7,7 @@
 //
 
 #import "NSTimer+RACSignalInterval.h"
-#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 
 
 @implementation NSTimer (RACSignalInterval)

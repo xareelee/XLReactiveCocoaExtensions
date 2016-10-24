@@ -7,7 +7,7 @@
 //
 
 #import "RACCommand+HandleCommand.h"
-#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 
 
 @implementation RACCommand (HandleCommand)

@@ -7,7 +7,7 @@
 //
 
 #import "RACSignal+ValueValidation.h"
-#import <ReactiveCocoa/NSObject+RACDescription.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 
 
 @implementation RACSignal (ValueValidation)
@@ -15,7 +15,7 @@
 - (RACSignal *)racExt_hasValue;
 {
   return
-  [[[self
+  [[self
     map:^id(id value) {
       if (!value)
         return @NO;
@@ -29,18 +29,17 @@
         return @NO;
       }
       
-      NSCAssert(NO, @"This value type (%@) cound not be evaluated by -[RACSignal hasValue].", NSStringFromClass([value class]));
+      NSCAssert(NO, @"This value type (%@) cound not be evaluated by -[RACSignal hasValue]. Try to implement -hasValue on this class.", NSStringFromClass([value class]));
       return @NO;
     }]
-    distinctUntilChanged]
-    setNameWithFormat:@"%@ -%@", [self rac_description], NSStringFromSelector(_cmd)];
+    setNameWithFormat:@"%@ -%@", self.name, NSStringFromSelector(_cmd)];
 }
 
 - (RACSignal *)racExt_isValidEmail;
 {
   // see http://stackoverflow.com/questions/3139619/check-that-an-email-address-is-valid-on-ios
   return
-  [[[self
+  [[self
     map:^id(NSString *email) {
       BOOL isString = [email isKindOfClass:[NSString class]];
       NSCAssert(isString, @"The email value (%@) should be kind NSString.", NSStringFromClass([email class]));
@@ -55,7 +54,6 @@
       NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
       return @([emailTest evaluateWithObject:email]);
     }]
-    distinctUntilChanged]
-    setNameWithFormat:@"%@ -%@", [self rac_description], NSStringFromSelector(_cmd)];;
+    setNameWithFormat:@"%@ -%@", self.name, NSStringFromSelector(_cmd)];;
 }
 @end
