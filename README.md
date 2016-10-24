@@ -38,6 +38,7 @@ pod 'XLReactiveCocoaExtensions', '~> 3.0'
 [[RACSignal return:@"hello"] racExt_isValidEmail]; // NO
 [[RACSignal return:@"hello@world"] racExt_isValidEmail]; // NO
 [[RACSignal return:@"hello@world.com"] racExt_isValidEmail]; // YES
+[[RACSignal return:@1] racExt_isValidEmail]; // raise exception on DEBUG for non-string types
 ```
 
 
