@@ -1,5 +1,9 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
+target :XLReactiveCocoaExtensionsDev do
+  pod 'XLReactiveCocoaExtensions', :path => './../'
+end
+
 target :XLReactiveCocoaExtensionsDevTests do
   pod 'XLReactiveCocoaExtensions', :path => './../'
 end

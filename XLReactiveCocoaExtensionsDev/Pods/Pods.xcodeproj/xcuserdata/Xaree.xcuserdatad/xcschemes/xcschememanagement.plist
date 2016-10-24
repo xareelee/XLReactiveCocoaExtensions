@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-XLReactiveCocoaExtensionsDev.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-XLReactiveCocoaExtensionsDevTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,7 +27,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1BC263EB3272EF3BB6A9FC95243D8415</key>
+		<key>001AB117B07DF061F7B8F1D937B8A029</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -32,7 +37,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>43C5F8F56A22BA83AF9B1D3BA77E464C</key>
+		<key>4CDCD57C629B472BDCF5EB4C430E795F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AFD9DF68BF168562EEBE09A03A98797F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
