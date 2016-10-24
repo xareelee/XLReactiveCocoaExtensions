@@ -7,7 +7,7 @@
 //
 
 #import "UIButton+RACTitleSupport.h"
-#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 
 
 @implementation UIButton (RACTitleSupport)

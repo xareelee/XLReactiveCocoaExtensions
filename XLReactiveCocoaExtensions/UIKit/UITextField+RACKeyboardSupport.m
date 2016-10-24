@@ -7,7 +7,7 @@
 //
 
 #import "UITextField+RACKeyboardSupport.h"
-#import <ReactiveCocoa/NSObject+RACDescription.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 
 
 @implementation UITextField (RACEXTKeyboardSupport)
@@ -24,7 +24,7 @@
     concat:[self rac_signalForControlEvents:UIControlEventEditingDidEndOnExit]]
     skip:1]
     takeUntil:self.rac_willDeallocSignal]
-    setNameWithFormat:@"%@ -rac_keyboardReturnSignal", [self rac_description]];
+    setNameWithFormat:@"%@ -rac_keyboardReturnSignal", NSStringFromClass([self class])];
 }
 
 @end

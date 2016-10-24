@@ -7,7 +7,7 @@
 //
 
 #import "RACSignal+SignallingControl.h"
-#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 
 @implementation RACSignal (SignallingControl)
 

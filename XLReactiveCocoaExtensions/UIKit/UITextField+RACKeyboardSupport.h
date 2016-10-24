@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <ReactiveCocoa/ReactiveCocoa.h>
 
+@class RACSignal;
+@class RACDisposable;
 
 @interface UITextField (RACEXTKeyboardSupport)
 
