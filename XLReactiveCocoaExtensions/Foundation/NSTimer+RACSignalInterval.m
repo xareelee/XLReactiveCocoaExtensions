@@ -12,7 +12,7 @@
 
 @implementation NSTimer (RACSignalInterval)
 
-+ (RACSignal *)racExt_countUpWithTimeInterval:(NSTimeInterval)interval count:(NSUInteger)count;
++ (RACSignal *)racExt_countUpWithTimeInterval:(NSTimeInterval)interval fromZeroTo:(NSUInteger)count;
 {
   NSNumber *startValue = @(0);
   return
@@ -22,7 +22,7 @@
 
 }
 
-+ (RACSignal *)racExt_countDownWithTimeInterval:(NSTimeInterval)interval count:(NSUInteger)count;
++ (RACSignal *)racExt_countDownWithTimeInterval:(NSTimeInterval)interval toZeroFrom:(NSUInteger)count;
 {
   NSNumber *startValue = @(count);
   return
@@ -30,6 +30,21 @@
     return @([running integerValue] - 1);
   }] startWith:startValue];
   
+}
+
+@end
+
+
+
+
+@implementation NSTimer (RACSignalInterval_Deprecated)
+
++ (RACSignal *)racExt_countUpWithTimeInterval:(NSTimeInterval)interval count:(NSUInteger)count {
+  [self racExt_countUpWithTimeInterval:interval fromZeroTo:count];
+}
+
++ (RACSignal *)racExt_countDownWithTimeInterval:(NSTimeInterval)interval count:(NSUInteger)count {
+  [self racExt_countDownWithTimeInterval:interval toZeroFrom:count];
 }
 
 @end

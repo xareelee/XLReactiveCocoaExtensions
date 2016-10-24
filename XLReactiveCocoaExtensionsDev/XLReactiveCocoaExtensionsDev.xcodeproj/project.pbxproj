@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113825461DBE4060008FE8E1 /* FoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 113825451DBE4060008FE8E1 /* FoundationTests.m */; };
 		119BC0B11DBDF53B0061BBD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 119BC0B01DBDF53B0061BBD3 /* main.m */; };
 		119BC0B41DBDF53B0061BBD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 119BC0B31DBDF53B0061BBD3 /* AppDelegate.m */; };
 		119BC0B71DBDF53B0061BBD3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 119BC0B61DBDF53B0061BBD3 /* ViewController.m */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		113825451DBE4060008FE8E1 /* FoundationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundationTests.m; sourceTree = "<group>"; };
 		119BC0AC1DBDF53B0061BBD3 /* XLReactiveCocoaExtensionsDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLReactiveCocoaExtensionsDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		119BC0B01DBDF53B0061BBD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		119BC0B21DBDF53B0061BBD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				119BC0C91DBDF53B0061BBD3 /* XLReactiveCocoaExtensionsDevTests.m */,
+				113825451DBE4060008FE8E1 /* FoundationTests.m */,
 				119BC0CB1DBDF53B0061BBD3 /* Info.plist */,
 			);
 			path = XLReactiveCocoaExtensionsDevTests;
@@ -356,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113825461DBE4060008FE8E1 /* FoundationTests.m in Sources */,
 				119BC0CA1DBDF53B0061BBD3 /* XLReactiveCocoaExtensionsDevTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,11 +16,22 @@
 /// @param interval Time interval to count once
 /// @param count How many times to count
 /// @note The signal will send an addtional initial value for the count.
-+ (RACSignal *)racExt_countUpWithTimeInterval:(NSTimeInterval)interval count:(NSUInteger)count;
++ (RACSignal *)racExt_countUpWithTimeInterval:(NSTimeInterval)interval fromZeroTo:(NSUInteger)target;
 
 /// Count down from the target value to 0 for every time interval.
 /// @param interval Time interval to count once
 /// @param count How many times to count
 /// @note The signal will send an addtional initial value for the count.
-+ (RACSignal *)racExt_countDownWithTimeInterval:(NSTimeInterval)interval count:(NSUInteger)count;
++ (RACSignal *)racExt_countDownWithTimeInterval:(NSTimeInterval)interval toZeroFrom:(NSUInteger)target;
 @end
+
+
+@interface NSTimer (RACSignalInterval_Deprecated)
+
++ (RACSignal *)racExt_countUpWithTimeInterval:(NSTimeInterval)interval count:(NSUInteger)count __attribute__((deprecated("Use -racExt_countUpWithTimeInterval:countFromZeroTo: instead of")));
+
++ (RACSignal *)racExt_countDownWithTimeInterval:(NSTimeInterval)interval count:(NSUInteger)count __attribute__((deprecated("Use -racExt_countDownWithTimeInterval:countToZeroFrom: instead of")));
+
+@end
+
+
