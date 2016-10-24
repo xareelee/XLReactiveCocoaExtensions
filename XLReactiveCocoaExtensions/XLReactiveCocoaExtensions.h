@@ -9,7 +9,7 @@
 #ifndef CMDPUserLogin_XLReactiveCocoaExtension_h
 #define CMDPUserLogin_XLReactiveCocoaExtension_h
 
-#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 
 // RACExtensions
 #import <XLReactiveCocoaExtensions/RACSignal+ValueValidation.h>
