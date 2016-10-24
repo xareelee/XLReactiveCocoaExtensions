@@ -1,0 +1,27 @@
+PODS:
+  - ReactiveObjC (1.0.1)
+  - XLReactiveCocoaExtensions (3.0.0):
+    - XLReactiveCocoaExtensions/Core (= 3.0.0)
+    - XLReactiveCocoaExtensions/Foundation (= 3.0.0)
+    - XLReactiveCocoaExtensions/UIKit (= 3.0.0)
+  - XLReactiveCocoaExtensions/Core (3.0.0):
+    - ReactiveObjC (~> 1.0)
+  - XLReactiveCocoaExtensions/Foundation (3.0.0):
+    - XLReactiveCocoaExtensions/Core
+  - XLReactiveCocoaExtensions/UIKit (3.0.0):
+    - XLReactiveCocoaExtensions/Core
+
+DEPENDENCIES:
+  - XLReactiveCocoaExtensions (from `./../`)
+
+EXTERNAL SOURCES:
+  XLReactiveCocoaExtensions:
+    :path: "./../"
+
+SPEC CHECKSUMS:
+  ReactiveObjC: 0e618037d7b883b4cebcc8da203e8ed9b69ca2d3
+  XLReactiveCocoaExtensions: 2f5a935084de66c2c7c6620892b634502b27ef8f
+
+PODFILE CHECKSUM: 72519cb0d48ee8b09abb3b8338af06af3c1ed785
+
+COCOAPODS: 1.1.0.rc.2

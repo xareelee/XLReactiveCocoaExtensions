@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface XLReactiveCocoaExtensionsDevTests : XCTestCase
+@interface XLReactiveCocoaExtensionsTests : XCTestCase
 
 @end
 
-@implementation XLReactiveCocoaExtensionsDevTests
+@implementation XLReactiveCocoaExtensionsTests
 
 - (void)setUp {
     [super setUp];
