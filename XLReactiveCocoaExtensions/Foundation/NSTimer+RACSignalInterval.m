@@ -40,11 +40,11 @@
 @implementation NSTimer (RACSignalInterval_Deprecated)
 
 + (RACSignal *)racExt_countUpWithTimeInterval:(NSTimeInterval)interval count:(NSUInteger)count {
-  [self racExt_countUpWithTimeInterval:interval fromZeroTo:count];
+  return [self racExt_countUpWithTimeInterval:interval fromZeroTo:count];
 }
 
 + (RACSignal *)racExt_countDownWithTimeInterval:(NSTimeInterval)interval count:(NSUInteger)count {
-  [self racExt_countDownWithTimeInterval:interval toZeroFrom:count];
+  return [self racExt_countDownWithTimeInterval:interval toZeroFrom:count];
 }
 
 @end
