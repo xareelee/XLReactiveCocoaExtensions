@@ -41,9 +41,10 @@
   return
   [[self
     map:^id(NSString *email) {
-      BOOL isString = [email isKindOfClass:[NSString class]];
-      NSCAssert(isString, @"The email value (%@) should be kind NSString.", NSStringFromClass([email class]));
-      if (!isString) {
+      // only allow nil or NSString
+      BOOL isValid = !email || [email isKindOfClass:[NSString class]];
+      NSCAssert(isValid, @"The email value (%@) should be kind NSString.", NSStringFromClass([email class]));
+      if (!isValid) {
         return @NO;
       }
       // Discussion http://blog.logichigh.com/2010/09/02/validating-an-e-mail-address/

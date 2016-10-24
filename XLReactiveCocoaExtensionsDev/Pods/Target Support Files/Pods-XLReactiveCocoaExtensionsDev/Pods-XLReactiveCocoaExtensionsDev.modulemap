@@ -1,0 +1,6 @@
+framework module Pods_XLReactiveCocoaExtensionsDev {
+  umbrella header "Pods-XLReactiveCocoaExtensionsDev-umbrella.h"
+
+  export *
+  module * { export * }
+}

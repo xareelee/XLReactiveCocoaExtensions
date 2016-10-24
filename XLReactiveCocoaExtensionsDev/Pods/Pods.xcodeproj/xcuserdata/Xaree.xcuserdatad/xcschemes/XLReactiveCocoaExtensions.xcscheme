@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '001AB117B07DF061F7B8F1D937B8A029'
+               BlueprintIdentifier = 'FF17EAEF2CF602C2B78CFBBF308006E0'
                BlueprintName = 'XLReactiveCocoaExtensions'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libXLReactiveCocoaExtensions.a'>
+               BuildableName = 'XLReactiveCocoaExtensions.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

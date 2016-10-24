@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09C109745E8968A97B542744 /* Pods_XLReactiveCocoaExtensionsDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8284E3F99C3317D7D5B9598 /* Pods_XLReactiveCocoaExtensionsDev.framework */; };
 		113825461DBE4060008FE8E1 /* FoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 113825451DBE4060008FE8E1 /* FoundationTests.m */; };
+		113825481DBE40EA008FE8E1 /* CoreExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 113825471DBE40EA008FE8E1 /* CoreExtensionTests.m */; };
 		119BC0B11DBDF53B0061BBD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 119BC0B01DBDF53B0061BBD3 /* main.m */; };
 		119BC0B41DBDF53B0061BBD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 119BC0B31DBDF53B0061BBD3 /* AppDelegate.m */; };
 		119BC0B71DBDF53B0061BBD3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 119BC0B61DBDF53B0061BBD3 /* ViewController.m */; };
@@ -15,8 +17,7 @@
 		119BC0BC1DBDF53B0061BBD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 119BC0BB1DBDF53B0061BBD3 /* Assets.xcassets */; };
 		119BC0BF1DBDF53B0061BBD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119BC0BD1DBDF53B0061BBD3 /* LaunchScreen.storyboard */; };
 		119BC0CA1DBDF53B0061BBD3 /* XLReactiveCocoaExtensionsDevTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 119BC0C91DBDF53B0061BBD3 /* XLReactiveCocoaExtensionsDevTests.m */; };
-		9A7A5796A60C9CF9EFEF60F8 /* libPods-XLReactiveCocoaExtensionsDevTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FACA2AB4B0E29444EBAA4F2A /* libPods-XLReactiveCocoaExtensionsDevTests.a */; };
-		B39A0EEE6D6598478E15BA31 /* libPods-XLReactiveCocoaExtensionsDev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CECFCE1E3BDA62F72B2764D3 /* libPods-XLReactiveCocoaExtensionsDev.a */; };
+		A16E749BFFB21F5A9FE24F34 /* Pods_XLReactiveCocoaExtensionsDevTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523BFAD9C01B6BCFBF783157 /* Pods_XLReactiveCocoaExtensionsDevTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		113825451DBE4060008FE8E1 /* FoundationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundationTests.m; sourceTree = "<group>"; };
+		113825471DBE40EA008FE8E1 /* CoreExtensionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreExtensionTests.m; sourceTree = "<group>"; };
 		119BC0AC1DBDF53B0061BBD3 /* XLReactiveCocoaExtensionsDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLReactiveCocoaExtensionsDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		119BC0B01DBDF53B0061BBD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		119BC0B21DBDF53B0061BBD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,12 +46,12 @@
 		119BC0C51DBDF53B0061BBD3 /* XLReactiveCocoaExtensionsDevTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XLReactiveCocoaExtensionsDevTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		119BC0C91DBDF53B0061BBD3 /* XLReactiveCocoaExtensionsDevTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLReactiveCocoaExtensionsDevTests.m; sourceTree = "<group>"; };
 		119BC0CB1DBDF53B0061BBD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		523BFAD9C01B6BCFBF783157 /* Pods_XLReactiveCocoaExtensionsDevTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XLReactiveCocoaExtensionsDevTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5982884FCECD2C04F2BEEC19 /* Pods-XLReactiveCocoaExtensionsDevTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLReactiveCocoaExtensionsDevTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XLReactiveCocoaExtensionsDevTests/Pods-XLReactiveCocoaExtensionsDevTests.release.xcconfig"; sourceTree = "<group>"; };
 		B41BA16257C428CD8F7DA133 /* Pods-XLReactiveCocoaExtensionsDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLReactiveCocoaExtensionsDev.release.xcconfig"; path = "Pods/Target Support Files/Pods-XLReactiveCocoaExtensionsDev/Pods-XLReactiveCocoaExtensionsDev.release.xcconfig"; sourceTree = "<group>"; };
-		CECFCE1E3BDA62F72B2764D3 /* libPods-XLReactiveCocoaExtensionsDev.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XLReactiveCocoaExtensionsDev.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8284E3F99C3317D7D5B9598 /* Pods_XLReactiveCocoaExtensionsDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XLReactiveCocoaExtensionsDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0128C8D677E801C4D4DD6C4 /* Pods-XLReactiveCocoaExtensionsDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLReactiveCocoaExtensionsDev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLReactiveCocoaExtensionsDev/Pods-XLReactiveCocoaExtensionsDev.debug.xcconfig"; sourceTree = "<group>"; };
 		DDF52999F53A28738C5E01DD /* Pods-XLReactiveCocoaExtensionsDevTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLReactiveCocoaExtensionsDevTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLReactiveCocoaExtensionsDevTests/Pods-XLReactiveCocoaExtensionsDevTests.debug.xcconfig"; sourceTree = "<group>"; };
-		FACA2AB4B0E29444EBAA4F2A /* libPods-XLReactiveCocoaExtensionsDevTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XLReactiveCocoaExtensionsDevTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B39A0EEE6D6598478E15BA31 /* libPods-XLReactiveCocoaExtensionsDev.a in Frameworks */,
+				09C109745E8968A97B542744 /* Pods_XLReactiveCocoaExtensionsDev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A7A5796A60C9CF9EFEF60F8 /* libPods-XLReactiveCocoaExtensionsDevTests.a in Frameworks */,
+				A16E749BFFB21F5A9FE24F34 /* Pods_XLReactiveCocoaExtensionsDevTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +123,7 @@
 			children = (
 				119BC0C91DBDF53B0061BBD3 /* XLReactiveCocoaExtensionsDevTests.m */,
 				113825451DBE4060008FE8E1 /* FoundationTests.m */,
+				113825471DBE40EA008FE8E1 /* CoreExtensionTests.m */,
 				119BC0CB1DBDF53B0061BBD3 /* Info.plist */,
 			);
 			path = XLReactiveCocoaExtensionsDevTests;
@@ -140,8 +143,8 @@
 		CEDBBE1C3A2AEB7922709F4E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FACA2AB4B0E29444EBAA4F2A /* libPods-XLReactiveCocoaExtensionsDevTests.a */,
-				CECFCE1E3BDA62F72B2764D3 /* libPods-XLReactiveCocoaExtensionsDev.a */,
+				B8284E3F99C3317D7D5B9598 /* Pods_XLReactiveCocoaExtensionsDev.framework */,
+				523BFAD9C01B6BCFBF783157 /* Pods_XLReactiveCocoaExtensionsDevTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				113825461DBE4060008FE8E1 /* FoundationTests.m in Sources */,
+				113825481DBE40EA008FE8E1 /* CoreExtensionTests.m in Sources */,
 				119BC0CA1DBDF53B0061BBD3 /* XLReactiveCocoaExtensionsDevTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

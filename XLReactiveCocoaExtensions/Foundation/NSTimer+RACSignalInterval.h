@@ -14,13 +14,13 @@
 
 /// Count up from 0 to the target value for every time interval.
 /// @param interval Time interval to count once
-/// @param count How many times to count
+/// @param target How many times to count
 /// @note The signal will send an addtional initial value for the count.
 + (RACSignal *)racExt_countUpWithTimeInterval:(NSTimeInterval)interval fromZeroTo:(NSUInteger)target;
 
 /// Count down from the target value to 0 for every time interval.
 /// @param interval Time interval to count once
-/// @param count How many times to count
+/// @param target How many times to count
 /// @note The signal will send an addtional initial value for the count.
 + (RACSignal *)racExt_countDownWithTimeInterval:(NSTimeInterval)interval toZeroFrom:(NSUInteger)target;
 @end

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Nimble.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-XLReactiveCocoaExtensionsDev.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -19,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Specta.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>XLReactiveCocoaExtensions.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>001AB117B07DF061F7B8F1D937B8A029</key>
+		<key>136F177525FB0E77CB971B862EDDE80F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>33CCFE3C8E8E26C8DE1C207DFF46CBF9</key>
+		<key>3A830915917352807758B729B5354A06</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4CDCD57C629B472BDCF5EB4C430E795F</key>
+		<key>72E30CEFE495DD0EB9CFB72FCF80894C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AFD9DF68BF168562EEBE09A03A98797F</key>
+		<key>7AAD1CDB3D042E5F39405F6F3A917876</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D8DB46BB5F5E0F3576893A012757E607</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF17EAEF2CF602C2B78CFBBF308006E0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -13,6 +13,35 @@ pod 'XLReactiveCocoaExtensions', '~> 3.0'
 
 ## API
 
+### RAC Extensions
+
+`-[RACSignal racExt_hasValue]`: evalute value and return a boolean value
+
+```objc
+// return NO
+[[RACSignal return:nil] racExt_hasValue];
+[[RACSignal return:[NSNull null]] racExt_hasValue];
+[[RACSignal return:@""] racExt_hasValue]; // empty string is @NO
+[[RACSignal return:@0] racExt_hasValue];  // 0 is @NO
+// return YES
+[[RACSignal return:@"hello"] racExt_hasValue];
+[[RACSignal return:@100] racExt_hasValue];
+// evaluate by calling -hasValue on objects (you could extend it by Category)
+[[RACSignal return:obj] racExt_hasValue]; // evaluate -[obj hasValue]
+```
+
+`-[RACSignal racExt_isValidEmail]`: evaluate whether the value is valid email format. Useful with `UITextField`.
+
+```
+[[RACSignal return:nil] racExt_isValidEmail]; // NO
+[[RACSignal return:@""] racExt_isValidEmail]; // NO
+[[RACSignal return:@"hello"] racExt_isValidEmail]; // NO
+[[RACSignal return:@"hello@world"] racExt_isValidEmail]; // NO
+[[RACSignal return:@"hello@world.com"] racExt_isValidEmail]; // YES
+```
+
+
+
 ### NSTimer
 
 ```objc

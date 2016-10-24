@@ -1,0 +1,6 @@
+framework module XLReactiveCocoaExtensions {
+  umbrella header "XLReactiveCocoaExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}
